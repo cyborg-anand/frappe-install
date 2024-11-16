@@ -1,7 +1,9 @@
-# frappe-install
+# Frappe Installation
 
- **Install Frappe In WSL**:
-  Update and Upgrade Packages.
-   sudo apt-get update -y
+## Install Frappe in WSL
 
+### Step 1: Update and Upgrade Packages
+Run the following command to update and upgrade your packages:
 
+```bash
+sudo apt-get update -y
