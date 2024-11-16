@@ -7,3 +7,6 @@ Run the following command to update and upgrade your packages:
 
 ```bash
 sudo apt-get update -y
+also run
+```bash
+sudo apt-get upgrade -y
