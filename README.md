@@ -2,7 +2,7 @@
 
 ## Install Frappe in WSL
 
-### Step 1: Update and Upgrade Packages
+### Step 1: Update the Packages
 Run the following command to update and upgrade your packages:
 
 ```bash
