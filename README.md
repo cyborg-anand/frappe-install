@@ -8,7 +8,8 @@ Run the following command to update and upgrade your packages:
 ```bash
 sudo apt-get update -y
 
-also run
+### Step 2:Upgrade Packages
+Run the following command to update and upgrade your packages:
 
 ```bash
 sudo apt-get upgrade -y
