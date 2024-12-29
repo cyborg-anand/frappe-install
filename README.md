@@ -134,7 +134,7 @@ cd frappe-bench
 ### Change user directory permissions
 This will give the bench user execution permission to the home directory.
 ```bash
-chmod -R o+rx /home/[user proile]
+chmod -R o+rx /home/[user profile]
 ```
 ### Start The Bench
 ```bash
