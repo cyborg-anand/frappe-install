@@ -115,6 +115,63 @@ sudo npm install -g yarn -y
 ```bash
 sudo apt-get install xvfb libfontconfig wkhtmltopdf -y
 ```
+1. Fix Missing Packages
+a. Install libjpeg62-turbo Alternative
+The libjpeg62-turbo package might have been replaced or is unavailable for your current Ubuntu version. Try installing the libjpeg8 or libjpeg-turbo8 package, which should be compatible:
+
+```bash
+sudo apt-get install libjpeg8-dev
+```
+b. Install libssl1.1 Alternative
+If libssl1.1 is missing, it’s possible that your version of Ubuntu no longer supports it. You can install libssl1.0.0 instead (though this might depend on your specific system):
+
+```bash
+sudo apt-get install libssl1.0.0
+```
+Alternatively, you can try installing libssl-dev which should include SSL libraries for development:
+```bash
+sudo apt-get install libssl-dev
+```
+2. Update Your Package Index
+Sometimes, package index issues can cause these errors. Update your package lists to ensure your repositories are up-to-date:
+
+```bash
+sudo apt-get update
+```
+3. Install the Packages Again
+After fixing these issues, you can reattempt installing the necessary dependencies:
+
+```bash
+sudo apt-get install -y \
+  wget \
+  build-essential \
+  libssl-dev \
+  libfontconfig1 \
+  libjpeg8-dev \
+  libx11-dev \
+  libxrender-dev \
+  libxext-dev \
+  qtbase5-dev \
+  qtchooser \
+  qt5-qmake \
+  qtbase5-dev-tools \
+  libpng-dev
+```
+### Then Download the packagge
+Step 1:
+```bash
+wget https://github.com/wkhtmltopdf/packaging/releases/download/0.12.6.1-2/wkhtmltox_0.12.6.1-2.jammy_amd64.deb
+```
+Step 2:
+```bash
+sudo dpkg -i wkhtmltox_0.12.6.1-2.jammy_amd64.deb
+```
+Check installation. 
+```bash
+wkhtmltopdf --version
+```
+The output should be something like this wkhtmltopdf 0.12.x.x (with patched qt)
+
 ### Install frappe bench
 ```bash
 sudo -H pip3 install frappe-bench --break-system-packages
