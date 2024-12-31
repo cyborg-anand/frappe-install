@@ -198,8 +198,8 @@ chmod -R o+rx /home/[user profile]
 bench new-site [site-name]
 ```
 Enter the MySQL root password which we created while installing mariaDb
-Next It will ask to Set Administrator password for the site we created, You can set a password to login to the site and Reenter the password again, then 
-Optional
+Next It will ask to Set Administrator password for the site we created, You can set a password to login to the site and Reenter the password again, 
+### This step is Optional
 ```bash  
 bench --site [site-name] add-to-hosts
 ```
