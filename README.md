@@ -182,11 +182,11 @@ sudo -H pip3 install ansible --break-system-packages
 ```
 ### Initialize Frappe Bench
 ```bash
-bench init frappe-bench --frappe-branch version-15
+bench init {bench-name} --frappe-branch version-15
 ```
 ### Switch directories into the Frappe Bench directory
 ```bash
-cd frappe-bench
+cd {bench-name}
 ```
 ### Change user directory permissions
 This will give the bench user execution permission to the home directory.
@@ -209,7 +209,7 @@ bench --site [site-name] add-to-hosts
 ## Install ERPNext and other Apps in Frappe Bench
 ### Download all the apps we want to install
 ```bash
-bench get-app --branch version-15 erpnext
+bench get-app erpnext
 ```
 ### If any other apps we can install like this 
 ```bash
