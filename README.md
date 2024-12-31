@@ -193,17 +193,14 @@ This will give the bench user execution permission to the home directory.
 ```bash
 chmod -R o+rx /home/[user profile]
 ```
-### Start The Bench
-```bash
- bench start
-```
 ### Create a New Site
 ```bash
 bench new-site [site-name]
 ```
 Enter the MySQL root password which we created while installing mariaDb
 Next It will ask to Set Administrator password for the site we created, You can set a password to login to the site and Reenter the password again, then 
-```bash
+Optional
+```bash  
 bench --site [site-name] add-to-hosts
 ```
 ## Install ERPNext and other Apps in Frappe Bench
