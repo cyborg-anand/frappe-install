@@ -206,7 +206,7 @@ bench --site [site-name] add-to-hosts
 ## Install ERPNext and other Apps in Frappe Bench
 ### Download all the apps we want to install
 ```bash
-bench get-app erpnext
+bench get-app erpnext --branch version-15
 ```
 ### If any other apps we can install like this 
 ```bash
