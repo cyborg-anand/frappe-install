@@ -64,10 +64,12 @@ When you run this command, the server will show the following prompts. Please fo
 * Enter current password for root: (Enter your SSH root user password)
 * Switch to unix_socket authentication [Y/n]: Y
 * Change the root password? [Y/n]: Y
- It will ask you to set new MySQL root password at this step. This can be different from the SSH root user password.
+* It will ask you to set new MySQL root password at this step. This can be different from the 
+  SSH root user password.
 * Remove anonymous users? [Y/n] Y
 * Disallow root login remotely? [Y/n]: N
- This is set as N because we might want to access the database from a remote server for using business analytics software like Metabase / PowerBI / Tableau, etc.
+* This is set as N because we might want to access the database from a remote server for 
+  using business analytics software like Metabase / PowerBI / Tableau, etc.
 * Remove test database and access to it? [Y/n]: Y
 * Reload privilege tables now? [Y/n]: Y
 
@@ -193,6 +195,10 @@ This will give the bench user execution permission to the home directory.
 ```bash
 chmod -R o+rx /home/[user profile]
 ```
+### Start The Bench
+```bash
+start bench
+```
 ### Create a New Site
 ```bash
 bench new-site [site-name]
@@ -219,6 +225,13 @@ bench --site [site-name] install-app erpnext
 ```bash
 bench --site [site-name] install-app hrms
 ```
+To enable developer mode do it immediately after installing app to sites before configuration in the UI
+```bash
+bench set-config -g developer_mode 1
+```
+alternativelyy we can do for particulaar site only by this cmd, 
+[ bench --site your-site-name set-config developer_mode 1 ]
+
 ### If bench is running stop it and again start
 ```bash
 bench start
