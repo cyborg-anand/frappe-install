@@ -197,7 +197,7 @@ chmod -R o+rx /home/[user profile]
 ```
 ### Start The Bench
 ```bash
-start bench
+bench start
 ```
 ### Create a New Site
 ```bash
