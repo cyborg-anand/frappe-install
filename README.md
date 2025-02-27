@@ -168,7 +168,7 @@ Step 2:
 ```bash
 sudo dpkg -i wkhtmltox_0.12.6.1-2.jammy_amd64.deb
 ```
-Check installation. 
+### Close the terminal and restart to Check installation. 
 ```bash
 wkhtmltopdf --version
 ```
