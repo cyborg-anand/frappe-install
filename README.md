@@ -166,6 +166,8 @@ wget https://github.com/wkhtmltopdf/packaging/releases/download/0.12.6.1-2/wkhtm
 ```
 Step 2:
 ```bash
+sudo apt install xfonts-75dpi
+sudo dpkg --configure -a
 sudo dpkg -i wkhtmltox_0.12.6.1-2.jammy_amd64.deb
 ```
 ### Close the terminal and restart to Check installation. 
